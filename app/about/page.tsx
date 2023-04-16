@@ -44,7 +44,7 @@ export default function AboutPage() {
               <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-semibold text-transparent">
                 Full-Stack developer
               </span>{" "}
-              based in Guadalajara, México.
+              based in<b> Guadalajara, México.</b>
             </p>
             <p className="leading-normal ">
               I have a wide range of hobbies and passions that keep me busy.

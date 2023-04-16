@@ -8,7 +8,7 @@ import {
 
 export default function pageResources() {
   return (
-    <div>
+    <div className="md:w-screen md:max-w-xl flex-1 flex-col">
       <h1 className="text-6xl font-semibold leading-none pb-2 mb-2 bg-clip-text bg-gradient-to-r from-cyan-300 to-purple-600 text-transparent">
         Resources.
       </h1>
