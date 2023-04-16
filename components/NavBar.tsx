@@ -13,7 +13,7 @@ export const NavBar = () => {
     <Popover className="">
       <Popover.Overlay className="fixed z-20 inset-0 backdrop-blur-sm" />
 
-      <div className=" mb-4 flex flex-col  md:px-0">
+      <div className=" md:mb-4 flex flex-col  md:px-0">
         <div className="-my-2 -mr-2 md:hidden">
           <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-neutral-100 hover:text-neutral-200 focus:outline-none   ">
             <span className="sr-only">Open menu</span>

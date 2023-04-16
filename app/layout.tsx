@@ -35,7 +35,7 @@ export default function RootLayout({
         />
       </Head>
       <body className="min-h-screen max-w-5xl m-auto md:pt-40 pt-0 md:flex md:flex-row flex-col p-5 md:p-0">
-        <div className="flex flex-row py-5 md:items-start items-center justify-between">
+        <div className="flex flex-row py-5 md:items-start justify-between">
           <Link href={"/"}>
             <div className="md:hidden font-semibold ">alw.</div>
           </Link>
