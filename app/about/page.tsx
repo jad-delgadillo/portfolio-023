@@ -26,8 +26,8 @@ export default function AboutPage() {
           </svg>
         </div>
       </div>
-      <div className="flex items-center justify-center ">
-        <div className="z-10">
+      <div className="flex md:flex md:flex-row flex-col items-center justify-center ">
+        <div className="">
           <Image
             priority
             src={aboutPic}
@@ -40,8 +40,10 @@ export default function AboutPage() {
         <div className="max-w-md ml-5 text-2xl font-extralight">
           <p className="">
             Hey, I&#39;m <b>Jorge.</b> I am a{" "}
-            <b>software engineer and developer </b> based in Guadalajara,
-            México.
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-semibold text-transparent">
+              Full-Stack developer
+            </span>{" "}
+            based in Guadalajara, México.
           </p>
           <p className="leading-normal ">
             I have a wide range of hobbies and passions that keep me busy. From

@@ -13,7 +13,7 @@ export const NavBar = () => {
     <Popover className="">
       <Popover.Overlay className="fixed inset-0 backdrop-blur-sm" />
 
-      <div className=" mb-4 flex flex-col px-6 md:px-0">
+      <div className=" mb-4 flex flex-col  md:px-0">
         <div className="-my-2 -mr-2 md:hidden">
           <Popover.Button className="inline-flex items-center justify-center rounded-md bg-transparent p-2 text-neutral-100 hover:text-neutral-200 focus:outline-none   ">
             <span className="sr-only">Open menu</span>
@@ -93,7 +93,7 @@ export const NavBar = () => {
       >
         <Popover.Panel
           focus
-          className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
+          className="absolute inset-x-0 z-20 top-0 origin-top-right transform p-2 transition md:hidden"
         >
           {({ close }) => (
             <div className="divide-y-2 divide-neutral-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
@@ -101,12 +101,9 @@ export const NavBar = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <Link href="/">
-                      <Image
-                        src="/dark-logo.png"
-                        alt=""
-                        width={35}
-                        height={35}
-                      />
+                      <h1 className="font-semibold text-2xl text-black">
+                        alw.
+                      </h1>
                     </Link>
                   </div>
                   <div className="-mr-2">
