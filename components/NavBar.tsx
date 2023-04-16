@@ -11,7 +11,7 @@ export const NavBar = () => {
   const pathname = usePathname();
   return (
     <Popover className="">
-      <Popover.Overlay className="fixed inset-0 backdrop-blur-sm" />
+      <Popover.Overlay className="fixed z-20 inset-0 backdrop-blur-sm" />
 
       <div className=" mb-4 flex flex-col  md:px-0">
         <div className="-my-2 -mr-2 md:hidden">
@@ -131,6 +131,16 @@ export const NavBar = () => {
                 <div className="grid grid-cols-1 gap-y-4 gap-x-8 text-right">
                   <Link
                     className={
+                      pathname == "/"
+                        ? "rounded-md py-2 px-3 text-sm font-bold text-stone-500 transition duration-300"
+                        : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-500"
+                    }
+                    href="/"
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    className={
                       pathname == "/about"
                         ? "rounded-md py-2 px-3 text-sm font-bold text-stone-500 transition duration-300"
                         : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-500"
@@ -149,16 +159,6 @@ export const NavBar = () => {
                   >
                     Projects
                   </Link>
-                  {/* <Link
-                    className={
-                      pathname == "/book-notes"
-                        ? "rounded-md py-2 px-3 text-sm font-bold text-stone-500 transition duration-300"
-                        : "rounded-md py-2 px-3 text-sm text-stone-400  transition duration-300  hover:text-stone-500"
-                    }
-                    href="/book-notes"
-                  >
-                    Book Notes
-                  </Link> */}
                   <Link
                     className={
                       pathname == "/resources"
