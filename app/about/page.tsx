@@ -10,7 +10,7 @@ export default function AboutPage() {
           <h1 className="text-6xl font-semibold mb-2 bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500 text-transparent">
             About Me
           </h1>
-          <div className="flex ">
+          <div className="flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -38,8 +38,8 @@ export default function AboutPage() {
               className="rounded-lg saturate-[110%]"
             />
           </div>
-          <div className="md:max-w-md md:ml-5 ml-0 mt-2 text-2xl font-extralight">
-            <p className="text-justify md:text-left">
+          <div className="md:max-w-sm md:ml-5 ml-0 mt-2 text-xl text-justify font-extralight">
+            <p className="">
               Hey, I&#39;m <b>Jorge.</b> I am a{" "}
               <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-semibold text-transparent">
                 Full-Stack developer

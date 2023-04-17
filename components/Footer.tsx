@@ -1,5 +1,6 @@
 import React from "react";
 import { SOCIALS } from "@/utils/data";
+import Link from "next/link";
 
 interface SocialItem {
   link: string;
@@ -14,9 +15,9 @@ export default function Footer() {
           {SOCIALS.map((item: SocialItem, idx: number) => {
             return (
               <li key={idx}>
-                <a href={item.link} target="_blank" rel="noreferrer">
+                <Link href={item.link} target="_blank" rel="noreferrer">
                   {item.icon}
-                </a>
+                </Link>
               </li>
             );
           })}
