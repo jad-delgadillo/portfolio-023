@@ -22,7 +22,7 @@ export const SOCIALS = [
     ),
   },
   {
-    link: "https://twitter.com/hqasmei",
+    link: "https://twitter.com/AlwaysJAD",
     icon: (
       <AiOutlineTwitter
         className="cursor-pointer text-white transition-transform hover:-translate-y-1"
