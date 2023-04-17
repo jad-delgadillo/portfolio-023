@@ -5,6 +5,7 @@ import Figures from "@/components/Figures";
 import Head from "next/head";
 import Script from "next/script";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} bg-neutral-950 text-white font-poppins`}
+      className={`${poppins.variable} bg-neutral-950  text-white font-poppins`}
     >
       <Head>
         <link
@@ -34,18 +35,24 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </Head>
-      <body className="min-h-screen max-w-5xl m-auto md:pt-40 pt-0 md:flex md:flex-row flex-col p-5 md:p-0">
-        <div className="flex flex-row py-5 md:items-start justify-between">
-          <Link href={"/"}>
-            <div className="md:hidden font-semibold ">alw.</div>
-          </Link>
-          <NavBar />
+      <body className="flex-col flex max-w-4xl lg:mx-auto">
+        <div className="flex flex-col justify-between min-h-screen">
+          <div className="md:pt-40 pt-0 md:flex md:flex-row flex-col p-5 md:p-0">
+            <div className="flex flex-row py-5 md:items-start justify-between">
+              <Link href={"/"}>
+                <div className="md:hidden font-semibold ">alw.</div>
+              </Link>
+              <NavBar />
+            </div>
+            <main className="text-normal">
+              {/* <Figures /> */}
+              {children}
+            </main>
+          </div>
+          <div className="">
+            <Footer />
+          </div>
         </div>
-        <main className="text-normal">
-          {/* <Figures /> */}
-          {children}
-        </main>
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></Script>
       </body>
     </html>
   );

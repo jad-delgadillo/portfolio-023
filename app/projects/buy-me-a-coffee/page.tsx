@@ -7,7 +7,7 @@ export default function BMACPage() {
   return (
     <section>
       <main className="text-xl">
-        <div>
+        <div className="flex flex-col flex-auto">
           <h1 className="text-4xl font-semibold leading-none pb-2 mb-1 bg-clip-text bg-gradient-to-r from-cyan-300 to-green-500 text-transparent">
             Buy me a Coffee
           </h1>
