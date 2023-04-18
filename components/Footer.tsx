@@ -9,7 +9,7 @@ interface SocialItem {
 
 export default function Footer() {
   return (
-    <footer className="mx-auto w-full max-w-2xl px-6">
+    <footer className="mx-auto w-full max-w-2xl px-6 mt-5">
       <div className="flex h-16 flex-col items-center justify-center">
         <ul className="flex flex-row items-center space-x-6">
           {SOCIALS.map((item: SocialItem, idx: number) => {

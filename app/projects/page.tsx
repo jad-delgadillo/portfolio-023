@@ -38,9 +38,9 @@ export default function ProjectsPage() {
             description="Dangerously good music."
           />
         </div>
-        <h2 className="text-4xl font-semibold mt-4 leading-relaxed inline-block ">
+        {/* <h2 className="text-4xl font-semibold mt-4 leading-relaxed inline-block ">
           Mobile Apps
-        </h2>
+        </h2> */}
       </section>
     </>
   );
