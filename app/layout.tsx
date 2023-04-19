@@ -11,6 +11,9 @@ import { motion, AnimatePresence } from "framer-motion";
 export const metadata = {
   title: "Jorge Delgadillo",
   description: "Dangerous good coding.",
+  icons: {
+    shortcut: "/favicon.ico",
+  },
 };
 
 const poppins = Poppins({
