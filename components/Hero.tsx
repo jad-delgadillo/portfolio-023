@@ -7,7 +7,7 @@ export default function Hero() {
     <div>
       <main className="">
         <div>
-          {/* <Figures /> */}
+          <Figures />
           <HeroTitle />
         </div>
       </main>

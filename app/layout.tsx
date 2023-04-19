@@ -6,6 +6,12 @@ import Head from "next/head";
 import Script from "next/script";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import { motion, AnimatePresence } from "framer-motion";
+
+export const metadata = {
+  title: "Jorge Delgadillo",
+  description: "Dangerous good coding.",
+};
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -13,11 +19,6 @@ const poppins = Poppins({
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-
-export const metadata = {
-  title: "Jorge Delgadillo",
-  description: "Dangerous good coding.",
-};
 
 export default function RootLayout({
   children,
@@ -44,6 +45,7 @@ export default function RootLayout({
               </Link>
               <NavBar />
             </div>
+
             <main className="text-normal">
               {/* <Figures /> */}
               {children}

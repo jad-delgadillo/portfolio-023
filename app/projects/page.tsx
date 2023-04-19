@@ -1,12 +1,14 @@
+"use client";
 import Project from "@/components/Project";
 import Link from "next/link";
 import React from "react";
 import { FiCoffee, FiMusic, FiMessageCircle } from "react-icons/fi";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function ProjectsPage() {
   return (
-    <>
-      <section>
+    <AnimatePresence>
+      <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <div className="flex flex-row">
           <h1 className="text-6xl font-semibold leading-none pb-2 mb-2 bg-clip-text bg-gradient-to-r from-cyan-300 to-green-500 text-transparent">
             Projects.
@@ -18,7 +20,14 @@ export default function ProjectsPage() {
         <h2 className="text-4xl font-semibold leading-relaxed inline-block">
           Web Apps
         </h2>
-        <div className="flex md:flex-row flex-col">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0 }}
+          className="flex md:flex-row flex-col"
+        >
+          <div></div>
+
           <Project
             id="buy-me-a-coffee"
             icon={<FiCoffee size={30} className="flex items-center" />}
@@ -37,11 +46,11 @@ export default function ProjectsPage() {
             name="Music Portfolio"
             description="Dangerously good music."
           />
-        </div>
+        </motion.div>
         {/* <h2 className="text-4xl font-semibold mt-4 leading-relaxed inline-block ">
           Mobile Apps
         </h2> */}
-      </section>
-    </>
+      </motion.section>
+    </AnimatePresence>
   );
 }

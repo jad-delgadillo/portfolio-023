@@ -2,6 +2,9 @@ import Link from "next/link";
 import React from "react";
 
 export default function Project({ name, description, icon, id, i }: any) {
+  const project = [
+    { id: 1, title: "experiment", description: "yes it is an experiment" },
+  ];
   return (
     <section key={i} className="md:mr-4 md:w-1/3 md:items-start flex-1">
       <Link href={`/projects/${id}`} passHref scroll={false}>
