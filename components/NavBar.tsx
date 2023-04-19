@@ -37,7 +37,9 @@ export const NavBar = () => {
           as="nav"
           className="hidden md:flex md:flex-col md:grow-0 pr-5 ml-4 transition-all"
         >
-          <div className="text-2xl mb-3 px-3 font-semibold">alw.</div>
+          <div className="text-2xl mb-3 px-3 font-semibold cursor-default">
+            alw.
+          </div>
           <Link
             className={
               pathname == "/"
