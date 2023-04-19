@@ -1,12 +1,9 @@
 import { NavBar } from "@/components/NavBar";
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import Figures from "@/components/Figures";
 import Head from "next/head";
-import Script from "next/script";
 import Link from "next/link";
 import Footer from "@/components/Footer";
-import { motion, AnimatePresence } from "framer-motion";
 
 export const metadata = {
   title: "Jorge Delgadillo",
@@ -38,6 +35,7 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
           rel="stylesheet"
         />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
       </Head>
       <body className="flex-col flex max-w-4xl lg:mx-auto">
         <div className="flex flex-col justify-between min-h-screen">
