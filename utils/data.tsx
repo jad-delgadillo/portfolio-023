@@ -140,7 +140,7 @@ export const RESOURCES = [
       },
       {
         name: "ChatGPT",
-        description: "OpenAI chatbot that uses GPT-3.",
+        description: "OpenAI chatbot that uses GPT-4.",
         link: " https://chat.openai.com/",
       },
     ],
