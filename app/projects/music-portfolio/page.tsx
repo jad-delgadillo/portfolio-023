@@ -33,7 +33,7 @@ export default function MusicPortfolioPage() {
               Music Portfolio
             </h1>
             <div className="mb-1">
-              <Link target="_blank" href={"https://coffee.alwaysjad.dev"}>
+              <Link target="_blank" href={"https://music.alwaysjad.dev"}>
                 <Image
                   src={thumb}
                   alt="picture of the website project."
