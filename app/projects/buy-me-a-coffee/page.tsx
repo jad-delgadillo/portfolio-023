@@ -41,24 +41,27 @@ export default function BMACPage() {
             {stack.map((item, idx) => {
               return (
                 <div key={idx}>
-                  <h2 className="border flex py-1 px-2 m-1 text-base rounded-lg border-cyan-200 text-cyan-200">
+                  <h2 className="border flex py-1 px-2 m-1 text-base rounded-lg border-cyan-200 text-cyan-200 cursor-default">
                     {item.name}
                   </h2>
                 </div>
               );
             })}
           </div>
-          {/* <p>
-            Tec-Stack: <br />
-            Next.js, Tailwind, TypeScript, and the Stripe API.
-          </p> */}
-          <p className="text-justify text-base font-light bg-neutral-900 p-2 mt-1 rounded-lg border border-neutral-700">
+          <p className="text-justify text-base font-light bg-neutral-900 p-2 mt-1 rounded-lg border text-neutral-100 border-neutral-700">
             Imagine a website that serves as a one-stop-shop for web developers,
             providing valuable tips and tricks on how to build amazing web
             applications. <br />
             This is a convinient tool and solution to support your favorite
             developer.
           </p>
+          <div className="inline-block">
+            <Link href={"https://github.com/jad-delgadillo/buy-me-a-coffee"}>
+              <div className="text-justify text-base font-light bg-neutral-900 p-2 mt-3 inline-block rounded-lg border text-neutral-100 hover:border-cyan-300 hover:text-cyan-200 border-neutral-700">
+                <p>Source Code</p>
+              </div>
+            </Link>
+          </div>
         </div>
       </main>
     </section>
