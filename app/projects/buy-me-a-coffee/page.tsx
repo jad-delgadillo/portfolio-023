@@ -56,9 +56,22 @@ export default function BMACPage() {
             developer.
           </p>
           <div className="inline-block">
-            <Link href={"https://github.com/jad-delgadillo/buy-me-a-coffee"}>
+            <Link
+              href={"https://github.com/jad-delgadillo/buy-me-a-coffee"}
+              passHref
+              target="_blank"
+            >
               <div className="text-justify text-base font-light bg-neutral-900 p-2 mt-3 inline-block rounded-lg border text-neutral-100 hover:border-cyan-300 hover:text-cyan-200 border-neutral-700">
                 <p>Source Code</p>
+              </div>
+            </Link>
+            <Link
+              href={"https://coffee.alwaysjad.dev"}
+              passHref
+              target="_blank"
+            >
+              <div className="text-justify text-base font-light ml-2 bg-neutral-900 p-2 mt-3 inline-block rounded-lg border text-neutral-100 hover:border-cyan-300 hover:text-cyan-200 border-neutral-700">
+                <p>Live Website</p>
               </div>
             </Link>
           </div>
