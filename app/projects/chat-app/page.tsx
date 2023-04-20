@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import thumb from "../music-portfolio/thumb.png";
+import thumb from "../chat-app/thumb.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 const stack = [

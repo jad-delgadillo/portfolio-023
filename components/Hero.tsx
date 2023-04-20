@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div>
       <main className="">
-        <div>
+        <div className="max-h-screen">
           <Figures />
           <HeroTitle />
         </div>
