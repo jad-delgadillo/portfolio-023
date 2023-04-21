@@ -55,11 +55,14 @@ export default function ChatAppPage() {
               })}
             </div>
             <p className="text-justify text-base font-light bg-neutral-900 p-2 mt-1 rounded-lg border text-neutral-100 border-neutral-700">
-              Imagine a website that serves as a one-stop-shop for web
-              developers, providing valuable tips and tricks on how to build
-              amazing web applications. <br />
-              This is a convinient tool and solution to support your favorite
-              developer.
+              Introducing our new web app chat that simplifies communication.
+              Built with Remix, Tailwind, TypeScript, and Supabase for the
+              database, our app provides a seamless chat experience for
+              individuals and teams alike. With our intuitive interface and
+              real-time messaging, users can easily stay connected and
+              collaborate in a secure environment. Whether you&#39;re looking to
+              streamline team communication or stay in touch with friends and
+              family, our app has you covered. Try our chat app today.
             </p>
             <div className="inline-block">
               <Link

@@ -55,11 +55,14 @@ export default function MusicPortfolioPage() {
               })}
             </div>
             <p className="text-justify text-base font-light bg-neutral-900 p-2 mt-1 rounded-lg border text-neutral-100 border-neutral-700">
-              Imagine a website that serves as a one-stop-shop for web
-              developers, providing valuable tips and tricks on how to build
-              amazing web applications. <br />
-              This is a convinient tool and solution to support your favorite
-              developer.
+              Introducing my new music portfolio website that showcases my work
+              on the music industry. Built with Next, Tailwind, TypeScript, and
+              Framer-Motion, The website offers a sleek and modern platform.
+              With customizable design options and easy navigation, the website
+              ensures that the music work stands out and captures the attention
+              of the audience. The website also provides a seamless user
+              experience, allowing visitors to easily browse and listen to the
+              music projects.
             </p>
             <div className="inline-block">
               <Link

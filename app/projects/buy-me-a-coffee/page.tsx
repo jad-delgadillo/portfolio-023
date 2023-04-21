@@ -39,7 +39,7 @@ export default function BMACPage() {
                   alt="picture of the website project."
                   width={500}
                   height={500}
-                  className="rounded-2xl mb-1 border border-neutral-700 hover:scale-[101%] hover:shadow-green-300 shadow-sm transition-all"
+                  className="rounded-2xl mb-1 border border-neutral-700   "
                 />
               </Link>
             </div>
@@ -55,11 +55,16 @@ export default function BMACPage() {
               })}
             </div>
             <p className="text-justify text-base font-light bg-neutral-900 p-2 mt-1 rounded-lg border text-neutral-100 border-neutral-700">
-              Imagine a website that serves as a one-stop-shop for web
-              developers, providing valuable tips and tricks on how to build
-              amazing web applications. <br />
-              This is a convinient tool and solution to support your favorite
-              developer.
+              Introducing our new web app that makes tipping a breeze! Built
+              with Nextjs, Tailwind, TypeScript, and Stripe API, our app
+              provides a secure and seamless tipping experience for customers
+              and service providers alike. With our user-friendly interface,
+              customers can easily show their appreciation for exceptional
+              service, while service providers can receive gratuity with ease.
+              Our app streamlines the tipping process, eliminates the need for
+              cash, and ensures that both parties can feel confident in the
+              safety and security of their transactions. Try our app today and
+              experience the future of tipping!
             </p>
             <div className="inline-block">
               <Link
