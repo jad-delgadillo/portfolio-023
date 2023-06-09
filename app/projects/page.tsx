@@ -1,13 +1,10 @@
 "use client";
-import Project from "@/components/Project";
 import Link from "next/link";
 import React from "react";
-import { FiCoffee, FiMusic, FiMessageCircle } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { allDocs, allPosts } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
-import { formatDate } from "@/lib/utils";
 
 export default function ProjectsPage() {
   const posts = allPosts
@@ -60,12 +57,6 @@ export default function ProjectsPage() {
                 {post.description && (
                   <p className="text-muted-foreground">{post.description}</p>
                 )}
-
-                {/* {post.date && (
-                  <p className="text-sm text-muted-foreground">
-                    {formatDate(post.date)}
-                  </p>
-                )} */}
                 <Link href={post.slug} className="absolute inset-0">
                   <span className="sr-only">View Article</span>
                 </Link>
