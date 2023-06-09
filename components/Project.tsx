@@ -15,8 +15,6 @@ export default function Project({ name, description, icon, id, i }: any) {
           </div>
         </div>
       </Link>
-      {/* <Link href={`/projects/${id}`} passHref scroll={false}>
-        </Link> */}
     </section>
   );
 }
