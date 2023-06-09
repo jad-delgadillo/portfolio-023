@@ -10,7 +10,7 @@ import Link from "next/link";
 
 import { env } from "@/env.mjs";
 import { absoluteUrl, cn, formatDate } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -160,13 +160,13 @@ export default async function PostPage({ params }: PostPageProps) {
       <Mdx code={post.body.code} />
       <hr className="mt-12" />
       <div className="flex justify-center py-6 lg:py-10">
-        {/* <Link
+        <Link
           href="/projects"
           className={cn(buttonVariants({ variant: "ghost" }))}
         >
           <Icons.chevronLeft className="mr-2 h-4 w-4" />
-          See all posts
-        </Link> */}
+          See all projects
+        </Link>
       </div>
     </article>
   );

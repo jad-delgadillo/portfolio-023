@@ -39,7 +39,7 @@ export default function ProjectsPage() {
         <hr className="my-8" />
         {posts?.length ? (
           <div className="grid gap-10 sm:grid-cols-2">
-            {posts.map((post, i) => (
+            {posts.map((post, index) => (
               <motion.article
                 key={post._id}
                 className="group relative flex flex-col space-y-2 rounded-lg ring-neutral-900 p-4 shadow-black shadow-md bg-neutral-900 hover:bg-neutral-800 transition-all"
@@ -50,8 +50,8 @@ export default function ProjectsPage() {
                     alt={post.title}
                     width={804}
                     height={452}
-                    className="rounded-md border-1 bg-muted transition-colors"
-                    priority={i <= 1}
+                    className="rounded-md border border-white bg-muted transition-colors"
+                    priority={index <= 1}
                   />
                 )}
                 <h2 className="text-2xl font-semibold leading-none pb-2 bg-clip-text bg-gradient-to-r from-cyan-300 to-green-500 text-transparent">
@@ -61,11 +61,11 @@ export default function ProjectsPage() {
                   <p className="text-muted-foreground">{post.description}</p>
                 )}
 
-                {post.date && (
+                {/* {post.date && (
                   <p className="text-sm text-muted-foreground">
                     {formatDate(post.date)}
                   </p>
-                )}
+                )} */}
                 <Link href={post.slug} className="absolute inset-0">
                   <span className="sr-only">View Article</span>
                 </Link>
