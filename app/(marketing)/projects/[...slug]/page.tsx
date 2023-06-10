@@ -151,7 +151,7 @@ export default async function PostPage({ params }: PostPageProps) {
         <Image
           src={post.image}
           alt={post.title}
-          width={720}
+          width={780}
           height={405}
           className="mb-8 rounded-md border bg-muted transition-colors"
           priority
