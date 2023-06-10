@@ -59,7 +59,7 @@ export default function AboutPage() {
                 I am always seeking new experiences and learning new things. I
                 believe that you should{" "}
                 <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-semibold text-transparent">
-                  never stop growing
+                  never stop learning and growing
                 </span>{" "}
                 and that&#39;s what I strive to do.
               </p>

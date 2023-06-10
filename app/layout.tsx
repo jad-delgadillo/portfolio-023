@@ -9,7 +9,7 @@ export const metadata = {
   title: "Jorge Delgadillo",
   description: "Dangerous good coding.",
   icons: {
-    shortcut: "/favicon.ico",
+    icon: "/favicon.ico",
   },
 };
 
