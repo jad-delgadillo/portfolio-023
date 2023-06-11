@@ -6,10 +6,22 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Jorge Delgadillo",
-  description: "Dangerous good coding.",
+  title: "Alwaysjad",
+  description: "Dangerously good coding.",
   icons: {
     icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Alwaysjad",
+    description: "Dangerously good coding.",
+    url: "https://www.alwaysjad.com",
+    siteName: "Alwaysjad",
+    images: {
+      url: "https://res.cloudinary.com/dzepeibjw/image/upload/v1659152027/Metadata-image---alw_nrcnx6.png",
+      width: 1820,
+      height: 904,
+      alt: "Website link image banner",
+    },
   },
 };
 
