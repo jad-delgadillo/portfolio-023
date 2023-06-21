@@ -5,6 +5,32 @@ import { useMDXComponent } from "next-contentlayer/hooks";
 import { cn } from "@/lib/utils";
 import { Callout } from "@/components/callout";
 import { MdxCard } from "@/components/mdx-card";
+import Link from "next/link";
+
+const CustomLink = (props: any) => {
+  const href = props.href;
+
+  if (href.startsWith("/")) {
+    return (
+      <Link className="underline underline-offset-4" href={href} {...props}>
+        {props.children}
+      </Link>
+    );
+  }
+
+  if (href.startsWith("#")) {
+    return <a className="underline underline-offset-4" {...props} />;
+  }
+
+  return (
+    <a
+      className="underline underline-offset-4 text-green-400 hover:text-green-200 transition-all"
+      target="_blank"
+      rel="noopener noreferrer"
+      {...props}
+    />
+  );
+};
 
 const components = {
   h1: ({ className, ...props }: any) => (
@@ -61,15 +87,18 @@ const components = {
       {...props}
     />
   ),
-  a: ({ className, ...props }: any) => (
-    <a
-      className={cn("font-medium underline underline-offset-4", className)}
-      {...props}
-    />
-  ),
+  // a: ({ className, ...props }: any) => (
+  //   <a
+  //     className={cn("font-medium underline underline-offset-4", className)}
+  //     {...props}
+  //   />
+  // ),
   p: ({ className, ...props }: any) => (
     <p
-      className={cn("leading-7 [&:not(:first-child)]:mt-6", className)}
+      className={cn(
+        "leading-7 font-extralight [&:not(:first-child)]:mt-6",
+        className
+      )}
       {...props}
     />
   ),
@@ -141,7 +170,7 @@ const components = {
   code: ({ className, ...props }: any) => (
     <code
       className={cn(
-        "relative rounded border px-[0.3rem] py-[0.2rem] font-mono text-sm",
+        "relative rounded border border-cyan-300 text-cyan-300 px-[0.3rem] py-[0.2rem] font-mono text-sm",
         className
       )}
       {...props}
@@ -150,6 +179,7 @@ const components = {
   Image,
   Callout,
   Card: MdxCard,
+  a: CustomLink,
 };
 
 interface MdxProps {

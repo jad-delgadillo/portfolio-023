@@ -1,4 +1,8 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.fontFamily": "Andale Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.cursorBlinking": "blink",
+  "editor.codeLensFontFamily": "Andale Mono,",
+  "editor.fontWeight": "normal"
 }

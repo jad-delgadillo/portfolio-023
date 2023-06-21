@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} bg-neutral-950  text-white font-poppins`}
+      className={`${poppins.variable} bg-[#0b0d0d] text-white font-poppins`}
     >
       <Head>
         <link
