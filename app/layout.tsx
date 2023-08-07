@@ -1,6 +1,6 @@
 import { NavBar } from "@/components/NavBar";
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Poppins, Inter } from "next/font/google";
 import Head from "next/head";
 import Link from "next/link";
 import Footer from "@/components/Footer";
@@ -32,6 +32,13 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -40,7 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} bg-[#0b0d0d] text-white font-poppins`}
+      className={`${inter.variable} bg-[#0b0d0d] text-white font-inter`}
     >
       <Head>
         <link

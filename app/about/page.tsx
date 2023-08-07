@@ -43,25 +43,27 @@ export default function AboutPage() {
                 height={500}
                 alt="Picture of me"
                 className="rounded-lg saturate-[110%]"
+                style={{ objectFit: "fill" }}
               />
             </div>
-            <div className="md:max-w-sm md:ml-5 ml-0 mt-2 text-xl text-justify font-extralight">
+            <div className="md:max-w-sm md:ml-5 ml-0 mt-2 text-xl font-extralight">
               <p className="">
-                Hey, I&#39;m <b>Jorge.</b> <br /> I am a{" "}
+                Hello! I&#39;m <b>Jorge.</b> <br /> I am a{" "}
                 <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-semibold text-transparent">
-                  Full-Stack developer
+                  Full-Stack Developer
                 </span>{" "}
-                based in<b> Guadalajara, México.</b>
+                from the vibrant city of <b> Guadalajara, México 🇲🇽</b>
               </p>
               <p className="leading-normal ">
-                I have a wide range of hobbies and passions that keep me busy.
-                From making music, kite surfing, writing, reading and traveling.
-                I am always seeking new experiences and learning new things. I
-                believe that you should{" "}
+                When I&#39;m not coding, I dive into hobbies like making music,
+                writing, reading, and traveling. These interests bring joy and
+                shape a well-rounded perspective in my work. <br />{" "}
                 <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-semibold text-transparent">
-                  never stop learning and growing
+                  I&#39;m driven by curiosity and a passion for learning
                 </span>{" "}
-                and that&#39;s what I strive to do.
+                qualities that fuel my continuous self-improvement and
+                confidence in tackling new challenges head-on.
+                <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text font-semibold text-transparent"></span>
               </p>
             </div>
           </div>
