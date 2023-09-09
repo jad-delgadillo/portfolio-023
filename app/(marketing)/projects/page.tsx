@@ -54,6 +54,9 @@ export default function ProjectsPage() {
   return (
     <AnimatePresence>
       <motion.div initial={{ opacity: 0, y: 0 }} animate={{ opacity: 1, y: 0 }}>
+        <h1 className="text-6xl font-semibold pb-2 bg-clip-text bg-gradient-to-r from-cyan-300 to-green-500 text-transparent">
+          Projects
+        </h1>
         <div className={styles.container}>
           <Titles data={enhancedData} setSelectedProject={setSelectedProject} />
           <Descriptions data={data} selectedProject={selectedProject} />
