@@ -1,0 +1,63 @@
+.descriptions {
+  position: absolute;
+  top: 3px;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+  
+
+  .description {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    // padding-left: 10%;
+    // padding-right: 10%;
+    clip-path: inset(50% 0 50%);
+    transition: clip-path .4s;
+    
+
+    p {
+      &:nth-of-type(1) {
+        color: #010101;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 6vw;
+        line-height: 6vw;
+        margin: 0px;
+        position: relative;
+        z-index: 1;
+      }
+      &:nth-of-type(2) {
+        width: 0%;
+        padding-left: 2rem;
+        font-size: 1vw;
+        font-weight: 700;
+        
+       
+      }
+    }
+  }
+
+  // Mobile-specific styles
+  @media (max-width: 767px) {
+    .description {
+      padding-left: 5%; // Adjust padding for mobile
+      padding-right: 5%; // Adjust padding for mobile
+
+      p {
+        &:nth-of-type(1) {
+          font-size: 12vw; // Increase font size for better readability on mobile
+          line-height: 11.5vw; // Adjust line height accordingly
+        }
+        &:nth-of-type(2) {
+          font-size: 3vw; // Adjust font size for description text on mobile
+          width: 100%; // Adjust width if needed for better layout on mobile
+         
+
+        }
+      }
+    }
+  }
+}

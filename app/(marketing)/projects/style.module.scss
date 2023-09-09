@@ -1,0 +1,13 @@
+.container{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  
+  
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 60%;
+  }
+}

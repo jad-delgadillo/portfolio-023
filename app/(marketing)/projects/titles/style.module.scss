@@ -1,0 +1,50 @@
+.titles {
+  width: 100%;
+  border-top: 1px solid rgba(183, 171, 152, 0.25);
+
+  .title {
+    border-bottom: 1px solid rgba(183, 171, 152, 0.25);
+    cursor: default;
+    position: relative;
+    z-index: 2;
+
+    .wrapper {
+      display: inline-block;
+      // padding-left: 10%;
+
+      p {
+        display: inline-block;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 5vw;
+        line-height: 6vw;
+        margin: 0px;
+        position: relative;
+        z-index: 2;
+
+        &:nth-of-type(2) {
+          display: block;
+          position: absolute;
+          color: white;
+          top: 0;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  // Mobile-specific styles
+  @media (max-width: 767px) {
+    .title {
+      .wrapper {
+        padding-left: 5%; // Adjust padding for mobile, for example
+
+        p {
+          font-size: 12vw; // Increase font size for better readability on mobile
+          line-height: 11.5vw; // Adjust line height accordingly
+        }
+      }
+    }
+  }
+}
