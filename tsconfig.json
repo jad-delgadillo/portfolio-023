@@ -25,6 +25,6 @@
       "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/app/references/page.tsx", ".contentlayer/generated", "components/framer.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/app/references/page.tsx", ".contentlayer/generated", "components/framer.tsx", "components/Loader.js"],
   "exclude": ["node_modules"]
 }
