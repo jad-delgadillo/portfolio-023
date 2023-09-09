@@ -1,3 +1,4 @@
+"use client";
 import { notFound } from "next/navigation";
 import { allAuthors, allPosts } from "contentlayer/generated";
 
@@ -13,6 +14,7 @@ import { absoluteUrl, cn, formatDate } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 import { AnimatePresence, motion } from "framer-motion";
+import { use } from "react";
 
 interface PostPageProps {
   params: {
@@ -31,50 +33,50 @@ async function getPostFromParams(params: any) {
   return post;
 }
 
-export async function generateMetadata({
-  params,
-}: PostPageProps): Promise<Metadata> {
-  const post = await getPostFromParams(params);
+// export async function generateMetadata({
+//   params,
+// }: PostPageProps): Promise<Metadata> {
+//   const post = await getPostFromParams(params);
 
-  if (!post) {
-    return {};
-  }
+//   if (!post) {
+//     return {};
+//   }
 
-  const url = env.NEXT_PUBLIC_APP_URL;
+//   const url = env.NEXT_PUBLIC_APP_URL;
 
-  const ogUrl = new URL(`${url}/api/og`);
-  ogUrl.searchParams.set("heading", post.title);
-  ogUrl.searchParams.set("type", "Blog Post");
-  ogUrl.searchParams.set("mode", "dark");
+//   const ogUrl = new URL(`${url}/api/og`);
+//   ogUrl.searchParams.set("heading", post.title);
+//   ogUrl.searchParams.set("type", "Blog Post");
+//   ogUrl.searchParams.set("mode", "dark");
 
-  return {
-    title: post.title,
-    description: post.description,
-    authors: post.authors.map((author: any) => ({
-      name: author,
-    })),
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      type: "article",
-      url: absoluteUrl(post.slug),
-      images: [
-        {
-          url: ogUrl.toString(),
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.description,
-      images: [ogUrl.toString()],
-    },
-  };
-}
+//   return {
+//     title: post.title,
+//     description: post.description,
+//     authors: post.authors.map((author: any) => ({
+//       name: author,
+//     })),
+//     openGraph: {
+//       title: post.title,
+//       description: post.description,
+//       type: "article",
+//       url: absoluteUrl(post.slug),
+//       images: [
+//         {
+//           url: ogUrl.toString(),
+//           width: 1200,
+//           height: 630,
+//           alt: post.title,
+//         },
+//       ],
+//     },
+//     twitter: {
+//       card: "summary_large_image",
+//       title: post.title,
+//       description: post.description,
+//       images: [ogUrl.toString()],
+//     },
+//   };
+// }
 
 export async function generateStaticParams(): Promise<
   PostPageProps["params"][]
@@ -96,26 +98,12 @@ export default async function PostPage({ params }: PostPageProps) {
   );
 
   return (
-    <article className="container relative max-w-3xl py-6 lg:py-0">
-      {/* <Link
-          href="/blog"
-          className={cn(
-            buttonVariants({ variant: "ghost" }),
-            "absolute left-[-200px] top-14 hidden xl:inline-flex"
-          )}
-        >
-          <Icons.chevronLeft className="mr-2 h-4 w-4" />
-          See all posts
-        </Link> */}
+    <motion.article
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="container relative max-w-3xl py-6 lg:py-0"
+    >
       <div>
-        {/* {post.date && (
-          <time
-            dateTime={post.date}
-            className="block text-sm text-muted-foreground"
-          >
-            Published on {formatDate(post.date)}
-          </time>
-        )} */}
         <h1 className=" inline-block font-heading  text-4xl lg:text-6xl font-semibold leading-none pb-2 bg-clip-text bg-gradient-to-r from-cyan-300 to-green-500 text-transparent">
           {post.title}
         </h1>
@@ -168,6 +156,6 @@ export default async function PostPage({ params }: PostPageProps) {
           See all projects
         </Link>
       </div>
-    </article>
+    </motion.article>
   );
 }
