@@ -1,0 +1,25 @@
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100vh;
+  background-color: white;
+  .container{
+
+
+      svg{
+          height: 10px;
+          padding: 10px;
+          fill: #c8bdb0;
+          transition: fill 0.2s;
+          cursor: pointer;
+          &:hover{
+              fill: #ec4e39;
+          }
+      }
+  }
+  p{
+      color:#494136;
+  }
+}
