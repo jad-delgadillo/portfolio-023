@@ -23,7 +23,7 @@ export default function Footer() {
             href="mailto:jorge.aldem@gmail.com"
             target="_blank"
           >
-            <a className={buttonClass}>
+            <a className={buttonClass} aria-label="Send email button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24"
@@ -42,7 +42,7 @@ export default function Footer() {
             target="_blank"
             legacyBehavior
           >
-            <a className={buttonClass}>
+            <a className={buttonClass} aria-label="LinkedIn Link button">
               <svg
                 stroke-width="0"
                 viewBox="0 0 1024 1024"

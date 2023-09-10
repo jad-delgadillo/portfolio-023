@@ -63,7 +63,7 @@ export default function RootLayout({
             </div>
 
             <main className={`text-normal `}>
-              <Loader />
+              {/* <Loader /> */}
               {children}
             </main>
           </div>
