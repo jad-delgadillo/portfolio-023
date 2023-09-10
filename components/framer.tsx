@@ -29,7 +29,7 @@ export default function Framer({ children }: FramerProps) {
   const { x, y } = position;
   return (
     <motion.div
-      className="md:w-1/12 w-1/6 p-5 fill-gray-400 hover:fill-white "
+      className="md:w-1/12 w-1/6  "
       style={{ position: "relative" }}
       ref={ref}
       onMouseMove={handleMouse}

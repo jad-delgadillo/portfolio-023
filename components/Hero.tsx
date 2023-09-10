@@ -7,7 +7,9 @@ export default function Hero() {
     <div>
       <main className="">
         <div className="max-h-screen">
-          <Figures />
+          <div className="opacity-100">
+            <Figures />
+          </div>
           <HeroTitle />
         </div>
       </main>
