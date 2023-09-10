@@ -1,5 +1,4 @@
-"use client";
-import React, { useRef } from "react";
+import React from "react";
 import { NavBar } from "@/components/NavBar";
 import "./globals.css";
 import { Poppins, Inter } from "next/font/google";
@@ -9,25 +8,25 @@ import Footer from "@/components/Footer";
 import Loader from "@/components/Loader.js";
 import styles from "@/components/styles.module.css";
 
-// export const metadata = {
-//   title: "Alwaysjad",
-//   description: "Dangerously good coding.",
-//   icons: {
-//     icon: "/favicon.ico",
-//   },
-//   openGraph: {
-//     title: "Alwaysjad",
-//     description: "Dangerously good coding.",
-//     url: "https://www.alwaysjad.com",
-//     siteName: "Alwaysjad",
-//     images: {
-//       url: "https://res.cloudinary.com/dzepeibjw/image/upload/v1659152027/Metadata-image---alw_nrcnx6.png",
-//       width: 1820,
-//       height: 904,
-//       alt: "Website link image banner",
-//     },
-//   },
-// };
+export const metadata = {
+  title: "Alwaysjad",
+  description: "Dangerously good coding.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Alwaysjad",
+    description: "Dangerously good coding.",
+    url: "https://www.alwaysjad.com",
+    siteName: "Alwaysjad",
+    images: {
+      url: "https://res.cloudinary.com/dzepeibjw/image/upload/v1659152027/Metadata-image---alw_nrcnx6.png",
+      width: 1820,
+      height: 904,
+      alt: "Website link image banner",
+    },
+  },
+};
 
 const inter = Inter({
   variable: "--font-inter",
@@ -41,8 +40,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const loader = useRef(null);
-  const path = useRef(null);
   return (
     <html
       lang="en"
@@ -66,11 +63,6 @@ export default function RootLayout({
             </div>
 
             <main className={`text-normal `}>
-              <div ref={loader} className={styles.loader}>
-                <svg>
-                  <path ref={path}></path>
-                </svg>
-              </div>
               <Loader />
               {children}
             </main>
