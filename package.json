@@ -48,6 +48,12 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "eslint-config-next": "^13.4.4"
+    "eslint-config-next": "^13.4.4",
+    "bun-types": "latest"
+  },
+  "module": "index.ts",
+
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
